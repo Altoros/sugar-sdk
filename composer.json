@@ -1,0 +1,23 @@
+{
+  "name": "altoros/sugar-sdk",
+  "description": "Custom sdk for sugar crm",
+  "authors": [
+    {
+      "name": "aliaksei.kalesnikau",
+      "email": "aliaksei.kalesnikau@altoros.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "sugarcrm/rest-php-client": "^1.4"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sugar\\": "src/"
+    }
+  }
+}
