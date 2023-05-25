@@ -36,7 +36,7 @@ class SugarSDK
             $api = new SugarAPI($config['server'], $config['credentials']);
             $api->setVersion($config['version']);
 
-            $tokenFile = (base_path() ?? __DIR__) . getenv('SUGAR_SDK_TOKEN_FILE');
+            $tokenFile = (function_exists('base_path') ? base_path() : __DIR__) . getenv('SUGAR_SDK_TOKEN_FILE');
 
             /**
              * Инициализация соединения
